@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Participant extends Eloquent
 {
-    use SoftDeletes;
+    //use SoftDeletes;
 
     /**
      * The database table used by the model.

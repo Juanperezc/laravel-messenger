@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Thread extends Eloquent
 {
-    use SoftDeletes;
+   // use SoftDeletes;
 
     /**
      * The database table used by the model.

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Message extends Eloquent
 {
-    use SoftDeletes;
+    //use SoftDeletes;
 
     /**
      * The database table used by the model.
