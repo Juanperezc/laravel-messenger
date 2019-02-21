@@ -307,10 +307,10 @@ class Thread extends Eloquent
      */
     public function activateAllParticipants()
     {
-        $participants = $this->participants()->get();
-        foreach ($participants as $participant) {
-            $participant->restore();
-        }
+        //$participants = $this->participants()->get();
+       // foreach ($participants as $participant) {
+       //     $participant->restore();
+       // }
     }
 
     /**

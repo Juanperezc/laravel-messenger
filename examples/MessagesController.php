@@ -124,7 +124,7 @@ class MessagesController extends Controller
             return redirect()->route('messages');
         }
 
-        $thread->activateAllParticipants();
+      //  $thread->activateAllParticipants();
 
         // Message
         Message::create([

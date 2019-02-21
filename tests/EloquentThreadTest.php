@@ -297,7 +297,7 @@ class EloquentThreadTest extends TestCase
         $participants = $thread->participants();
         $this->assertEquals(0, $participants->count());
 
-        $thread->activateAllParticipants();
+       // $thread->activateAllParticipants();
 
         $participants = $thread->participants();
         $this->assertEquals(3, $participants->count());
