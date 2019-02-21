@@ -104,7 +104,7 @@ class Thread extends Eloquent
     public function creator()
     {
         if (is_null($this->creatorCache)) {
-            $firstMessage = $this->messages()->withTrashed()->oldest()->first();
+            $firstMessage = $this->messages()->oldest()->first();
             $this->creatorCache = $firstMessage ? $firstMessage->user : Models::user();
         }
 
@@ -142,7 +142,7 @@ class Thread extends Eloquent
      */
     public function participantsUserIds($userId = null)
     {
-        $users = $this->participants()->withTrashed()->select('user_id')->get()->map(function ($participant) {
+        $users = $this->participants()->select('user_id')->get()->map(function ($participant) {
             return $participant->user_id;
         });
 
@@ -307,7 +307,7 @@ class Thread extends Eloquent
      */
     public function activateAllParticipants()
     {
-        $participants = $this->participants()->withTrashed()->get();
+        $participants = $this->participants()->get();
         foreach ($participants as $participant) {
             $participant->restore();
         }
