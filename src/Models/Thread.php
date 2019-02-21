@@ -168,7 +168,7 @@ class Thread extends Eloquent
 
         return $query->join($participantsTable, $this->getQualifiedKeyName(), '=', $participantsTable . '.thread_id')
             ->where($participantsTable . '.user_id', $userId)
-            ->where($participantsTable . '.deleted_at', null)
+         //   ->where($participantsTable . '.deleted_at', null)
             ->select($threadsTable . '.*');
     }
 
@@ -187,7 +187,7 @@ class Thread extends Eloquent
 
         return $query->join($participantTable, $this->getQualifiedKeyName(), '=', $participantTable . '.thread_id')
             ->where($participantTable . '.user_id', $userId)
-            ->whereNull($participantTable . '.deleted_at')
+         //   ->whereNull($participantTable . '.deleted_at')
             ->where(function (Builder $query) use ($participantTable, $threadsTable) {
                 $query->where($threadsTable . '.updated_at', '>', $this->getConnection()->raw($this->getConnection()->getTablePrefix() . $participantTable . '.last_read'))
                     ->orWhereNull($participantTable . '.last_read');
