@@ -259,6 +259,7 @@ class Thread extends Eloquent
             $participant = $this->getParticipantFromUser($userId);
             $participant->last_read = new Carbon();
             $participant->save();
+            return  $participant->last_read;
         } catch (ModelNotFoundException $e) { // @codeCoverageIgnore
             // do nothing
         }
