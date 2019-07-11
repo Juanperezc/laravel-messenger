@@ -1,8 +1,8 @@
 <?php
 
-namespace Cmgmyr\Messenger\Test\Stubs\Models;
+namespace Juan\Messenger\Test\Stubs\Models;
 
-use Cmgmyr\Messenger\Models\Message;
+use Juan\Messenger\Models\Message;
 
 class CustomMessage extends Message
 {

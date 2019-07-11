@@ -1,11 +1,11 @@
 <?php
 
-namespace Cmgmyr\Messenger\Test;
+namespace Juan\Messenger\Test;
 
 use Carbon\Carbon;
-use Cmgmyr\Messenger\Models\Models;
-use Cmgmyr\Messenger\Models\Participant;
-use Cmgmyr\Messenger\Models\Thread;
+use Juan\Messenger\Models\Models;
+use Juan\Messenger\Models\Participant;
+use Juan\Messenger\Models\Thread;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use ReflectionClass;
 

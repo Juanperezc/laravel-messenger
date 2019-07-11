@@ -26,18 +26,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Cmgmyr\\Messenger\\": "src/"
+            "Juan\\Messenger\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Cmgmyr\\Messenger\\Test\\": "tests/"
+            "Juan\\Messenger\\Test\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Cmgmyr\\Messenger\\MessengerServiceProvider"
+                "Juan\\Messenger\\MessengerServiceProvider"
             ]
         }
     },

@@ -1,11 +1,11 @@
 <?php
 
-namespace Cmgmyr\Messenger\Traits;
+namespace Juan\Messenger\Traits;
 
-use Cmgmyr\Messenger\Models\Message;
-use Cmgmyr\Messenger\Models\Models;
-use Cmgmyr\Messenger\Models\Participant;
-use Cmgmyr\Messenger\Models\Thread;
+use Juan\Messenger\Models\Message;
+use Juan\Messenger\Models\Models;
+use Juan\Messenger\Models\Participant;
+use Juan\Messenger\Models\Thread;
 use Illuminate\Database\Eloquent\Builder;
 
 trait Messagable
