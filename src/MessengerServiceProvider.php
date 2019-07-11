@@ -40,7 +40,7 @@ class MessengerServiceProvider extends ServiceProvider
     protected function configure()
     {
         $this->mergeConfigFrom(
-            base_path('vendor/Juan/messenger/config/config.php'),
+            base_path('vendor/juan/messenger/config/config.php'),
             'messenger'
         );
     }
@@ -54,11 +54,11 @@ class MessengerServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                base_path('vendor/Juan/messenger/config/config.php') => config_path('messenger.php'),
+                base_path('vendor/juan/messenger/config/config.php') => config_path('messenger.php'),
             ], 'config');
 
             $this->publishes([
-                base_path('vendor/Juan/messenger/migrations') => base_path('database/migrations'),
+                base_path('vendor/juan/messenger/migrations') => base_path('database/migrations'),
             ], 'migrations');
         }
     }
